@@ -230,6 +230,11 @@ class GuzzleBundleOAuth2PluginTest extends TestCase
                 'client_id' => 's6BhdRkqt3',
                 'auth_location' => 'body',
             ]],
+            'json in auth_location' => [[
+                'base_uri' => 'https://example.com',
+                'client_id' => 's6BhdRkqt3',
+                'auth_location' => 'json',
+            ]],
         ];
     }
 
@@ -302,7 +307,7 @@ class GuzzleBundleOAuth2PluginTest extends TestCase
                     'client_id' => 's6BhdRkqt3',
                     'auth_location' => 'somewhere',
                 ],
-                'exception message' => 'Invalid auth_location "somewhere". Allowed values: headers, body.',
+                'exception message' => 'Invalid auth_location "somewhere". Allowed values: headers, body, json.',
             ],
             'PasswordCredentials grant type without username' => [
                 'config' => [
