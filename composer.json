@@ -17,6 +17,13 @@
         }
     ],
 
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/grupa-blix/guzzle-oauth2-plugin.git"
+        }
+    ],
+
     "require": {
         "php":                              "^7.1|^8.0",
         "guzzlehttp/guzzle":                "^6.0",
@@ -25,7 +32,7 @@
         "symfony/config":                   "^4.0|^5.0|^6.0",
         "symfony/dependency-injection":     "^4.0|^5.0|^6.0",
         "symfony/expression-language":      "^4.0|^5.0|^6.0",
-        "sainsburys/guzzle-oauth2-plugin":  "^3.0"
+        "sainsburys/guzzle-oauth2-plugin":  "dev-auth_location_json"
     },
 
     "require-dev": {
